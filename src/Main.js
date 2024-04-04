@@ -2,10 +2,10 @@
 function Main(){
     return(
         <main>
-            <div className="hero"></div>
-            <div className="highlights"></div>
-            <div className="testimonials"></div>
-            <div className="about"></div>
+            <div className="hero"><h1>Hero</h1></div>
+            <div className="highlights"><h1>Highlights</h1></div>
+            <div className="testimonials"><h1>Testimonials</h1></div>
+            <div className="about"><h1>About</h1></div>
         </main>
     )
 }

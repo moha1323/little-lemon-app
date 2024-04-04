@@ -13,4 +13,4 @@ function Nav(){
     )
 }
 
-export default App;
+export default Nav;
