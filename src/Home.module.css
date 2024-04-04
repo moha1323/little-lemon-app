@@ -1,0 +1,36 @@
+header {
+   width: auto;
+   height: 100px;
+   background-color: #edefee;
+}
+
+.headerNav {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.headerNav img{
+   width: 200px;
+   height: 65px;
+   padding-right: 4rem;
+}
+
+.headerNav ul {
+   display: flex;
+}
+
+.headerNav li a {
+   display: block;
+   color: #333333;
+   text-align: center;
+   margin-right: 2rem;
+   padding: .875rem 1rem;
+   text-decoration: none;
+}
+
+.headerNav li a:hover {
+   background-color: #f4ce14;
+   text-decoration: underline #333333;
+}
