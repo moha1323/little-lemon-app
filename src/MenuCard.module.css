@@ -1,0 +1,44 @@
+.card {
+    width: 260px;
+    height: 280px;
+    border-radius: 14px;
+    border: solid 1.5px;
+}
+
+.image img {
+    width: 260px;
+    height: 164px;
+    border-radius: 14px 14px 0 0;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: "SemiBold";
+}
+
+.dish {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish p {
+    margin: 0 12px 0 12px;
+    font-size: 13px;
+}
+
+.dish p:nth-child(2) {
+    color: #EFAA6B;
+}
+
+.dishDescription {
+    margin: auto;
+    width: 230px;
+    height: 103px;
+}
+
+.dishDescription p {
+    font-size: 13px;
+}
