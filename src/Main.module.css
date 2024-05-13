@@ -116,13 +116,14 @@
     margin-top: 36px;
 }
 
-.about .location, .description {
+.about .location {
     color: #333333;
 }
 
 .about .description {
     width: 360px;
     height: 140px;
+    color: #333333;
 }
 
 .about img {
