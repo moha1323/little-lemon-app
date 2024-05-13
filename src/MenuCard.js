@@ -6,7 +6,7 @@ function MenuCard(props) {
     return(
         <div className={CardCSS.card}>
             <div className={CardCSS.image}>
-                <img src={props.image}/>
+                <img src={props.image} alt={props.dishName}/>
             </div>
             <div className={CardCSS.dish}>
                 <p>{props.dishName}</p>

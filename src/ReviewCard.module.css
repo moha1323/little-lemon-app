@@ -1,0 +1,42 @@
+.card{
+    width: 260px;
+    height: 300px;
+    background-color: #EAEAEA;
+    border: solid 1.5px;
+}
+
+.stars {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img {
+    width: 85px;
+    height: 85px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: "SemiBold";
+}
+
+.review {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.review p {
+    width: 220px;
+    height: 65px;
+    font-size: 14px;
+}

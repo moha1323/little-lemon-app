@@ -2,9 +2,12 @@ import React from 'react';
 import MainCSS from './Main.module.css';
 import heroImg from './images/restauranfood.jpg';
 import MenuCard from './MenuCard';
+import ReviewCard from './ReviewCard'
 import saladImg from './images/greeksalad.jpg';
 import bruchettaImg from './images/bruchetta.png';
 import lemonImg from './images/lemon-dessert.jpg';
+import aboutOne from './images/about-a.jpg';
+import aboutTwo from './images/about-b.jpg';
 import './App.css';
 
 function Main(){
@@ -30,6 +33,14 @@ function Main(){
             <div className={MainCSS.highlights}>
                 <div className={MainCSS.row}>
                     <div className={MainCSS.column}>
+                        <h1>This week's specials</h1>
+                    </div>
+                    <div className={MainCSS.column}>
+                        <button type='buttton' className={MainCSS.button}>Online Menu</button>
+                    </div>
+                </div>
+                <div className={MainCSS.row}>
+                    <div className={MainCSS.column}>
                         <MenuCard image={saladImg} dishName="Greek Salad" dishPrice="$12.99" dishDescription="The famous greek salad of crispy lettuce, pepers, olives and our chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."/>
                     </div>
                     <div className={MainCSS.column}>
@@ -40,8 +51,40 @@ function Main(){
                     </div>
                 </div>
             </div>
-            <div className="testimonials"><h1>Testimonials</h1></div>
-            <div className="about"><h1>About</h1></div>
+            <div className={MainCSS.testimonials}>
+                <div className={MainCSS.row}>
+                    <h1>Testimonials</h1>
+                </div>
+                <div className={MainCSS.row}>
+                    <div className={MainCSS.column}>
+                        <ReviewCard review="The greek salad was fantastic."/>
+                    </div>
+                    <div className={MainCSS.column}>
+                        <ReviewCard review="The grilled fish was so tender."/>
+                    </div>
+                    <div className={MainCSS.column}>
+                        <ReviewCard review="I am addicted to the lemon cake."/>
+                    </div>
+                    <div className={MainCSS.column}>
+                        <ReviewCard review="I am a pasta fanatic now because of their pasta."/>
+                    </div>
+                </div>
+            </div>
+            <div className={MainCSS.about}>
+                <div className={MainCSS.row}>
+                    <div className={MainCSS.column}>
+                        <h1 className={MainCSS.restaurant}>Little Lemon</h1>
+                        <h3 className={MainCSS.location}>Minneapolis</h3>
+                        <p className={MainCSS.description}>Little Lemon is a charming neighborhood bistro that serves the food we all constanly crave. We have a lively but causal environment. Our restaurant features a locally sourced menu with daily specials.</p>
+                    </div>
+                    <div className={MainCSS.column}>
+                        <div class={MainCSS.grid}>
+                            <img class={MainCSS.layerTwo} src={aboutTwo} alt='Chefs happy about new dish'/>
+                            <img class={MainCSS.layerOne} src={aboutOne} alt='Chefs working in kitchen'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
     )
 }
