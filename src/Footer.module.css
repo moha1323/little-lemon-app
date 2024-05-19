@@ -1,5 +1,5 @@
 footer {
-    padding: 24px;
+    padding: 24px 0px 24px 0px;
     width: 100%;
     height: 250px;
     background-color: #495E57;
@@ -14,4 +14,25 @@ footer {
 img {
     width: 150px;
     height: 250px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 95px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+h3, a {
+    color: #F4CE14;
+}
+
+a:hover {
+    color: #495E57;
+    background-color: #F4CE14;
 }

@@ -12,8 +12,8 @@ function Home(){
                 <img src={logo} alt="Little Lemon Logo"/>
                 <Nav />
             </header>
-            <Main/>
-            <Footer/>
+            <Main />
+            <Footer />
         </>
     )
 }
