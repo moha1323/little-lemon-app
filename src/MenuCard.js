@@ -1,6 +1,6 @@
 import React from 'react';
 import CardCSS from './MenuCard.module.css';
-import './App.css';
+
 
 function MenuCard(props) {
     return(

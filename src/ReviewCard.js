@@ -2,7 +2,6 @@ import React from 'react';
 import CardCSS from './ReviewCard.module.css';
 import { FaStar } from 'react-icons/fa';
 import avatarImg from './images/avatar.png'
-import './App.css';
 
 function ReviewCard(props) {
 
@@ -17,7 +16,7 @@ function ReviewCard(props) {
                 })}
             </div>
             <div className={CardCSS.avatar}>
-                <img src={avatarImg} alt='Image of an avatar'/>
+                <img src={avatarImg} alt='The avatar'/>
             </div>
             <div className={CardCSS.review}>
                 <p>"{props.review}"</p>

@@ -8,9 +8,11 @@ import bruchettaImg from './images/bruchetta.png';
 import lemonImg from './images/lemon-dessert.jpg';
 import aboutOne from './images/about-a.jpg';
 import aboutTwo from './images/about-b.jpg';
-import './App.css';
+import { useNavigate } from "react-router-dom";
 
 function Main(){
+    const navigate = useNavigate();
+    
     return(
         <main>
             <div className={MainCSS.hero}>
@@ -20,7 +22,9 @@ function Main(){
                             <h1 className={MainCSS.restaurant}>Little Lemon</h1>
                             <h3 className={MainCSS.location}>Minneapolis</h3>
                             <p className={MainCSS.description}>We are a Mediterranean restaurant, focused on traditional recipes served with a modern twist!</p>
-                            <button type='buttton' className={MainCSS.button}>Reserve a table</button>
+                            <button type='buttton' className={MainCSS.button} onClick={() => {
+                                navigate("/reservations");
+                            }}>Reserve a table</button>
                         </div>
                     </div>
                     <div className={MainCSS.column}>
@@ -36,7 +40,9 @@ function Main(){
                         <h1>This week's specials</h1>
                     </div>
                     <div className={MainCSS.column}>
-                        <button type='buttton' className={MainCSS.button}>Online Menu</button>
+                        <button type='buttton' className={MainCSS.button} onClick={() => {
+                            navigate("/menu");
+                        }}>Online Menu</button>
                     </div>
                 </div>
                 <div className={MainCSS.row}>
@@ -70,7 +76,7 @@ function Main(){
                     </div>
                 </div>
             </div>
-            <div className={MainCSS.about}>
+            <div id="about" className={MainCSS.about}>
                 <div className={MainCSS.row}>
                     <div className={MainCSS.column}>
                         <h1 className={MainCSS.restaurant}>Little Lemon</h1>
