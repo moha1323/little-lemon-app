@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 function Main(){
     const navigate = useNavigate();
-    
+
     return(
         <main>
             <div className={MainCSS.hero}>
@@ -84,9 +84,9 @@ function Main(){
                         <p className={MainCSS.description}>Little Lemon is a charming neighborhood bistro that serves the food we all constanly crave. We have a lively but causal environment. Our restaurant features a locally sourced menu with daily specials.</p>
                     </div>
                     <div className={MainCSS.column}>
-                        <div class={MainCSS.grid}>
-                            <img class={MainCSS.layerTwo} src={aboutTwo} alt='Chefs happy about new dish'/>
-                            <img class={MainCSS.layerOne} src={aboutOne} alt='Chefs working in kitchen'/>
+                        <div className={MainCSS.grid}>
+                            <img className={MainCSS.layerTwo} src={aboutTwo} alt='Chefs happy about new dish'/>
+                            <img className={MainCSS.layerOne} src={aboutOne} alt='Chefs working in kitchen'/>
                         </div>
                     </div>
                 </div>

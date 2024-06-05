@@ -1,7 +1,7 @@
 import React from 'react';
 import CardCSS from './ReviewCard.module.css';
 import { FaStar } from 'react-icons/fa';
-import avatarImg from './images/avatar.png'
+import avatarImg from './images/avatar.png';
 
 function ReviewCard(props) {
 

@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding-top: 25px;
+    column-gap: 75px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    justify-content: center;
+}
+
+.row:nth-child(3){
+    padding-bottom: 25px;
+}
