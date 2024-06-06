@@ -11,7 +11,7 @@ function ReviewCard(props) {
                 {[...Array(5)].map((star, index) => {
                     const currentRate = index + 1;
                     return(
-                        <FaStar size={45} color={currentRate <= 4 ? "#F4CE14" : "#D9D9D9"}/>
+                        <FaStar key={index} size={45} color={currentRate <= 4 ? "#F4CE14" : "#D9D9D9"}/>
                     )
                 })}
             </div>
