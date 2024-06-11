@@ -1,7 +1,10 @@
 import React, { useEffect, useReducer }  from 'react';
+import { useNavigate } from "react-router-dom";
+import BookingCSS from './BookingPage.module.css';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
 import BookingForm from './BookingForm';
+
 
 const seededRandom = function (seed) {
     var m = 2**35 - 31;
@@ -26,10 +29,6 @@ const fetchAPI = function(date) {
     }
 
     return result;
-};
-
-const submitAPI = function(formData) {
-    return true;
 };
 
 const initialState = {
@@ -75,28 +74,25 @@ function reducer(state, action) {
 };
 
 function BookingPage(){
-
     const [state, dispatch] = useReducer(reducer, initialState);
+    const navigate = useNavigate();
 
     useEffect(() => {console.log(state)}, [state]);
-
-    if(state.confirmed === "Yes"){
-        submitAPI(state);
-    }
 
     useEffect(() => {
         if(state.confirmed === "Yes"){
             localStorage.setItem(state.date, JSON.stringify(state))
             const storedState = JSON.parse(localStorage.getItem(state.date));
-            console.log("state: ",storedState)
+            console.log("state: ",storedState);
+            navigate("/?date="+storedState.date+"&time="+storedState.time);
         }
-    },[state]);
+    },[state, navigate]);
+
 
     return (
         <>
             <NavBar />
-            <div className="reservations">
-                <h1>Reservations</h1>
+            <div className={BookingCSS.reservations}>
                 <BookingForm state={state} dispatch={dispatch}/>
             </div>
             <Footer />

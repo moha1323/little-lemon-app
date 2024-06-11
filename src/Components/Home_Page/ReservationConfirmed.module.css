@@ -1,0 +1,12 @@
+.confirmed {
+    background-color: #495E57;
+}
+
+.confirmed h1 {
+    text-align: center;
+    color: #F4CE14;
+}
+
+.confirmed span {
+    color: #EDEFEE;
+}

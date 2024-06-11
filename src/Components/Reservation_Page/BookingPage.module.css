@@ -1,0 +1,7 @@
+.reservations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4CE14;
+    padding: 30px;
+}

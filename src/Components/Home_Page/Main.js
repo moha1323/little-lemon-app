@@ -1,14 +1,16 @@
 import React from 'react';
-import MainCSS from './Main.module.css';
-import heroImg from './images/restauranfood.jpg';
-import MenuCard from './MenuCard';
-import ReviewCard from './ReviewCard'
-import saladImg from './images/greeksalad.jpg';
-import bruchettaImg from './images/bruchetta.png';
-import lemonImg from './images/lemon-dessert.jpg';
-import aboutOne from './images/about-a.jpg';
-import aboutTwo from './images/about-b.jpg';
 import { useNavigate } from "react-router-dom";
+import MainCSS from './Main.module.css';
+import MenuCard from '../MenuCard';
+import ReviewCard from './ReviewCard';
+import heroImg from '../../images/restauranfood.jpg';
+import saladImg from '../../images/greeksalad.jpg';
+import bruchettaImg from '../../images/bruchetta.png';
+import lemonImg from '../../images/lemon-dessert.jpg';
+import aboutOne from '../../images/about-a.jpg';
+import aboutTwo from '../../images/about-b.jpg';
+
+
 
 function Main(){
     const navigate = useNavigate();

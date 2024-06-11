@@ -1,0 +1,80 @@
+.container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px 30px 15px 30px;
+    margin: 0 10px;
+    background-color: #EDEFEE;
+}
+
+.container h1 {
+    font-size: 34px;
+    text-align: center;
+    color: #495E57;
+}
+
+.booking {
+    position: relative;
+    margin-top: 10px;
+    min-height: 230px;
+    border-radius: 24px;
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+.booking .fields {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.fields .inputField {
+    display: flex;
+    width: 300px;
+    padding: 8px 0 0 0px;
+    flex-direction: row;
+    column-gap: 14px;
+}
+
+.inputField label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    justify-content: flex-start;
+}
+
+.inputField input {
+    justify-content: flex-end;
+}
+
+.inputField select {
+    justify-content: flex-end;
+}
+
+.fields .submit {
+    margin-top: 13px;
+    width: 220px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    background-color: #F4CE14;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+.fields .submit:hover {
+    color: #F4CE14;
+    background-color: #495E57;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 #F4CE14;
+    transition: 1s;
+}
+
+/* .booking{
+    display: grid;
+    max-width: 200px;
+    gap: 20px;
+} */

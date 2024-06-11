@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import Home from "./Home";
+import Home from './Components/Home_Page/Home.js';
 
 function App() {
-  const confirmed = "no";
 
   return (
     <>
-      <Home reservation={confirmed}/>
+      <Home />
     </>
   );
 }

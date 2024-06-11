@@ -3,11 +3,11 @@ import MenuCSS from './Menu.module.css';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
 import MenuCard from '../MenuCard';
-import saladImg from '../images/greeksalad.jpg';
-import bruchettaImg from '../images/bruchetta.png';
-import fishImg from '../images/grilledfish.jpg';
-import pastaImg from '../images/pasta.jpg';
-import lemonImg from '../images/lemon-dessert.jpg';
+import saladImg from '../../images/greeksalad.jpg';
+import bruchettaImg from '../../images/bruchetta.png';
+import fishImg from '../../images/grilledfish.jpg';
+import pastaImg from '../../images/pasta.jpg';
+import lemonImg from '../../images/lemon-dessert.jpg';
 
 function Menu() {
     return (

@@ -4,8 +4,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import Menu from './pages/Menu';
-import BookingPage from './pages/BookingPage';
+import Menu from './Components/Menu_Page/Menu';
+import BookingPage from './Components/Reservation_Page/BookingPage';
 
 const router = createBrowserRouter([
   {
